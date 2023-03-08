@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+/* RESETANDO CONFIG PADRAO */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 a{
@@ -9,16 +13,20 @@ a{
 }
 
 .container{
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-/* VARIAVEI DE ESTILO */
+/* VARIAVEIS DE ESTILOS */
 $background-header: #eee;
+$texto-sessao: 40px;
+$paragrafo-sessao: 14px;
 
+
+/* ESTILOS DO SITE */
 header{
     background-color: $background-header;
-    padding: 30px 0;
+    padding: 20px 0;
 
     .container{
         display: flex;
@@ -28,9 +36,14 @@ header{
         .logo{
             display: flex;
             align-items:baseline;
+            align-items: center;
 
-            img{
-                padding: 0 1px;
+            .logo-img{
+
+                img{
+                    width: 50px;
+                }
+
             }
         }
     
@@ -40,12 +53,174 @@ header{
                 display: flex;
                 list-style: none;
                 align-items: center;
+
+                li{
+                    a{
+                        color: #000;
+                        font-size: 18px;
+                        margin: 0 40px;
+                        font-weight: 300;
+                    }:hover{
+                        color: #747474;
+                        text-decoration: underline;
+                    }
+                }
             }
 
             form{
                 display: flex;
                 align-items: center;
+
+                input[type=text]{
+                    width: 250px;
+                    border: none;
+                    border-bottom: 1px solid #000;
+                    background-color: $background-header;
+                    margin-left: 50px;
+                    outline: none;
+                    font-size: 14px;
+                    line-height: 21px;
+                    padding: 5px 0;
+                }::placeholder{
+                    color: #8C8C8C;
+                }
+
+                button{
+                    border: none;
+                }
             }
         }
+
+        .cart{
+            cursor: pointer;
+        }
+    }
+}
+
+main{
+    margin: 30px 0;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+
+        .mosaico1,
+        .mosaico2,
+        .mosaico3{
+            width: 30.3%;
+            border-radius: 8px;
+        }
+
+        .mosaico1{
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            height: 500px;
+            overflow: hidden;
+
+            .mosaico1-img{
+                overflow: hidden;
+                margin-bottom: 20px;
+                border-radius: 8px;
+
+                img{
+                    width: 100%;
+                    transition: transform .9s ease;
+                }
+
+            }:hover img{
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+
+            .mosaico1-img2{
+                overflow: hidden;
+                border-radius: 8px;
+
+                img{
+                    width: 100%;
+                    transition: transform .9s ease;
+                }
+
+            }:hover img{
+                transform: scale(1.1);
+            }
+
+            
+        }
+
+        .mosaico2{
+            
+            .mosaico2-img{
+                overflow: hidden;
+                margin-bottom: 20px;
+                border-radius: 8px;
+
+                img{
+                    width: 100%;
+                    height: 500px;
+                    transition: transform .9s ease;
+                }
+
+            }:hover img{
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+        }
+
+        .mosaico3{
+            display: flex;
+            flex-direction: column;
+            justify-content:right;
+            height: 500px;
+            
+            .mosaico3-img{
+                overflow: hidden;
+                margin-bottom: 20px;
+                border-radius: 8px;
+
+                img{
+                    width: 100%;
+                    transition: transform .9s ease;
+                }
+
+            }:hover img{
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+
+            .mosaico3-img2{
+                overflow: hidden;
+                border-radius: 8px;
+
+                img{
+                    width: 100%;
+                    transition: transform .9s ease;
+                }
+
+            }:hover img{
+                transform: scale(1.1);
+            }
+
+
+        }
+    }
+}
+
+section#sessao-novidades{
+    margin-top: 60px;
+
+    .container{
+        text-align: center;
+
+        .texto-sessao{
+            font-size: $texto-sessao;
+        }
+
+        .paragrafo-sessao{
+            font-size: $paragrafo-sessao;
+        }
+
+        
     }
 }
