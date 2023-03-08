@@ -127,7 +127,8 @@ header{
                 list-style: none;
                 background-color: #fff;
                 height: 100%;
-                position: absolute;
+                position: fixed;
+                z-index: 9;
                 right: 0;
                 top: 0;
                 padding: 50px 20px;
