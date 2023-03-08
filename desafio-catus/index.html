@@ -31,7 +31,7 @@
                 </div>
             </div>
 
-            <div class="menu-desktop">
+            <nav class="menu-desktop">
                 <ul>
                     <li><a href="">Loja</a></li>
                     <li><a href="">Login</a></li>
@@ -49,7 +49,7 @@
                         </button>
                     </form>
                 </ul>
-            </div>
+            </nav>
 
             <div class="cart">
                 <svg width="40" height="37" viewBox="0 0 40 37" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -58,6 +58,29 @@
                         fill="#202020" />
                 </svg>
             </div>
+
+            <img onclick="abrirMenu()" class="icon-menu" src="./assets/img/menu.png" >
+
+            <nav class="menu-mobile">
+                <ul>
+                    <img onclick="fecharMenu()" class="fechar-menu" src="./assets/img/fechar.png" >
+                    <li><a href="">Loja</a></li>
+                    <li><a href="">Login</a></li>
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">Contato</a></li>
+                    <form>
+                        <input required type="text" placeholder="Digite aqui sua busca">
+                        <button>
+                            <svg width="30" height="35" viewBox="0 0 35 35" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M2.08057 13.7628C2.08057 7.7503 6.93192 2.88379 12.9071 2.88379C18.8822 2.88379 23.7336 7.7503 23.7336 13.7628C23.7336 19.7752 18.8822 24.6418 12.9071 24.6418C6.93192 24.6418 2.08057 19.7752 2.08057 13.7628ZM12.9071 0.883789C5.81901 0.883789 0.0805664 6.65409 0.0805664 13.7628C0.0805664 20.8715 5.81901 26.6418 12.9071 26.6418C16.09 26.6418 19.0009 25.4781 21.2421 23.5522L32.3354 34.6947C32.725 35.0861 33.3582 35.0875 33.7496 34.6979C34.141 34.3082 34.1424 33.675 33.7527 33.2836L22.6536 22.1353C24.574 19.8833 25.7336 16.9582 25.7336 13.7628C25.7336 6.65409 19.9951 0.883789 12.9071 0.883789Z"
+                                    fill="#202020" />
+                            </svg>
+                        </button>
+                    </form>
+                </ul>
+            </nav>
         </div>
     </header>
 
@@ -179,13 +202,13 @@
     <footer>
         <div class="container">
             <div class="atendimento">
-                <h5>Central de Atendimento</h5>
+                <h4>Central de Atendimento</h4>
                 <div class="flex">
                     <div class="line1"></div>
                     <div class="line2"></div>
                 </div>
                 
-                <h5>Whatsapp: (11) 98765-4321</h5>
+                <h5 class="whatsapp">Whatsapp: (11) 98765-4321</h5>
 
                 <p>São Paulo: (11) 1234-5678</p>
                 <p>Rio de Janeiro: (21) 1234-5678</p>
@@ -199,7 +222,7 @@
             </div>
 
             <div class="seguranca">
-                <h5 class="line">Selos de Segurança</h5>
+                <h4>Selos de Segurança</h4>
                 <div class="flex">
                     <div class="line1"></div>
                     <div class="line2"></div>
@@ -211,7 +234,7 @@
             </div>
             
             <div class="pagamento">
-                <h5 class="line">Formas de Pagamento</h5>
+                <h4>Formas de Pagamento</h4>
                 <div class="flex">
                     <div class="line1"></div>
                     <div class="line2"></div>

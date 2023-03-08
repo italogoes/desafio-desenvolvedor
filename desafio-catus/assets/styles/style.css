@@ -19,6 +19,7 @@ a {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 2%;
 }
 
 /* VARIAVEIS DE ESTILOS */
@@ -34,11 +35,14 @@ header .container {
 }
 header .container .logo {
   display: flex;
-  align-items: baseline;
   align-items: center;
 }
 header .container .logo .logo-img img {
   width: 50px;
+}
+header .container .logo .nome-site {
+  display: flex;
+  align-items: baseline;
 }
 header .container .menu-desktop ul {
   display: flex;
@@ -81,6 +85,60 @@ header .container .menu-desktop form button {
 }
 header .container .cart {
   cursor: pointer;
+}
+header .container .icon-menu {
+  width: 40px;
+  display: none;
+}
+header .container .fechar-menu {
+  width: 40px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+header .container .menu-mobile {
+  display: none;
+}
+header .container .menu-mobile ul {
+  list-style: none;
+  background-color: #fff;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 50px 20px;
+}
+header .container .menu-mobile ul li a {
+  color: #000;
+  padding: 10px 0;
+  display: inline-block;
+  font-size: 18px;
+}
+header .container .menu-mobile form {
+  display: flex;
+  align-items: center;
+}
+header .container .menu-mobile form input[type=text] {
+  width: 250px;
+  border: none;
+  border-bottom: 1px solid #000;
+  background-color: #fff;
+  margin-top: 30px;
+  outline: none;
+  font-size: 14px;
+  line-height: 21px;
+}
+header .container .menu-mobile form ::-moz-placeholder {
+  color: #8C8C8C;
+}
+header .container .menu-mobile form ::placeholder {
+  color: #8C8C8C;
+}
+header .container .menu-mobile form button {
+  border: none;
+  background-color: #fff;
+}
+header .container .menu-mobile form button svg {
+  margin-top: 15px;
 }
 
 main {
@@ -240,4 +298,90 @@ footer .container .line2 {
   background-color: #757575;
   height: 2px;
   width: 70%;
+}
+footer .container .atendimento h4 {
+  padding-bottom: 5px;
+}
+footer .container .atendimento .whatsapp {
+  padding: 15px 0;
+  font-size: 16px;
+}
+footer .container .atendimento h5 {
+  font-size: 16px;
+  padding-top: 15px;
+}
+footer .container .atendimento p {
+  font-size: 14px;
+  color: #f6f6f6;
+  font-weight: 300;
+  line-height: 22px;
+}
+footer .container .seguranca h4 {
+  padding-bottom: 5px;
+}
+footer .container .seguranca .img-seguranca {
+  padding-top: 10px;
+}
+footer .container .seguranca .img-seguranca img {
+  padding: 0 5px;
+}
+footer .container .pagamento h4 {
+  padding-bottom: 5px;
+}
+footer .container .pagamento .img-pagamento {
+  padding-top: 10px;
+  padding-right: 5px;
+}
+
+/* MIXINS */
+@media (max-width: 1110px) {
+  .menu-desktop {
+    display: none;
+  }
+  .icon-menu {
+    display: block !important;
+    cursor: pointer;
+  }
+}
+@media (max-width: 768px) {
+  main .container {
+    flex-direction: column !important;
+  }
+  main .container .mosaico1 {
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+  }
+  main .container .mosaico1 .mosaico1-img {
+    margin-right: 5%;
+  }
+  main .container .mosaico2 {
+    width: 100%;
+  }
+  main .container .mosaico3 {
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+  }
+  main .container .mosaico3 .mosaico3-img {
+    margin-right: 5%;
+  }
+  footer .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  footer .container .seguranca {
+    margin: 50px 0;
+  }
+}
+@media (max-width: 390px) {
+  #sessao-novidades .container h2 {
+    font-size: 29px !important;
+  }
+  #sessao-novidades .container p {
+    font-size: 13px !important;
+  }
+  #sessao-novidades .container .swiper {
+    padding: 0 !important;
+  }
 }/*# sourceMappingURL=style.css.map */
