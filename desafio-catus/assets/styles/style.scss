@@ -49,7 +49,7 @@ header{
             .logo-img{
 
                 img{
-                    width: 50px;
+                    width: 40px;
                 }
 
             }
@@ -487,8 +487,9 @@ $breakpoint-xs: 390px;
                 font-size: 29px !important;
             }
 
-            p{
+            .paragrafo-sessao{
                 font-size: 13px !important;
+                margin: 0 !important;
             }
 
             .swiper{

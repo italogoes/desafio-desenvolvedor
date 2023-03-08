@@ -38,7 +38,7 @@ header .container .logo {
   align-items: center;
 }
 header .container .logo .logo-img img {
-  width: 50px;
+  width: 40px;
 }
 header .container .logo .nome-site {
   display: flex;
@@ -378,8 +378,9 @@ footer .container .pagamento .img-pagamento {
   #sessao-novidades .container h2 {
     font-size: 29px !important;
   }
-  #sessao-novidades .container p {
+  #sessao-novidades .container .paragrafo-sessao {
     font-size: 13px !important;
+    margin: 0 !important;
   }
   #sessao-novidades .container .swiper {
     padding: 0 !important;
